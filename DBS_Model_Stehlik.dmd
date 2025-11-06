@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="DBS_Model_Stehlik" id="E49FBBC0-1903-BB58-2E09-EDC2BD9366A1" version="3.5">
+<createdBy>Filda</createdBy>
+<createdTime>2025-09-27 23:23:32 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>E49FBBC0-1903-BB58-2E09-EDC2BD9366A1</designId>
+</OSDM_Design>
