@@ -1,0 +1,14 @@
+Databáze Vojáků:
+
+
+Admin (technik, který má přístup ke všemu)
+voják - přístup sám na sebe - přihlašovaní na školení, viditelnost všech zbraní 
+(nepřihlášený)uživatel - viditelnost pouze některých zbraní, základní data o vojákovi
+
+/přihlašovat se budou moct pouze vojáci a admin, veřejnost žádnou takovou možnost mít nebude
+
+první vrstva (nepřihlášený):  
+možnost vyhledávaní vojáků a jejich hodnosti, vyznamenání a utvar, databáze všech vojáků od A po Z, viditelná databáze veřejné(vybraná) techniky
+
+první i druhá vrstva (voják):
+viditelná databáze veškeré techniky,
