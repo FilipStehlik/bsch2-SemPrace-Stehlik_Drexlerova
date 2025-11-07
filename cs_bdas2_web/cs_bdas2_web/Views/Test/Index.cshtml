@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Test databázového připojení";
+}
+
+<h2>Test připojení k Oracle databázi</h2>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        <h4>@ViewBag.Status</h4>
+        <p><strong>Chyba:</strong> @ViewBag.Error</p>
+    </div>
+}
+else
+{
+    <div class="alert alert-success">
+        <h4>@ViewBag.Status</h4>
+        <p><strong>Stav:</strong> @ViewBag.State</p>
+        <p><strong>Server:</strong> @ViewBag.DataSource</p>
+        <p><strong>Verze:</strong> @ViewBag.ServerVersion</p>
+    </div>
+}

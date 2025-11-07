@@ -3354,23 +3354,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Filda\\.nuget\\packages\\": {},
+    "C:\\Users\\lucie\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Filda\\Source\\Repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\cs_bdas2_web.csproj",
+      "projectUniqueName": "C:\\Users\\lucie\\Source\\Repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\cs_bdas2_web.csproj",
       "projectName": "cs_bdas2_web",
-      "projectPath": "C:\\Users\\Filda\\Source\\Repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\cs_bdas2_web.csproj",
-      "packagesPath": "C:\\Users\\Filda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Filda\\Source\\Repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\obj\\",
+      "projectPath": "C:\\Users\\lucie\\Source\\Repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\cs_bdas2_web.csproj",
+      "packagesPath": "C:\\Users\\lucie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lucie\\Source\\Repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Filda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lucie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3379,6 +3379,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
