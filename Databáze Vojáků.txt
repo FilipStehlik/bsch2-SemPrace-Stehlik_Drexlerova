@@ -1,5 +1,10 @@
 Databáze Vojáků:
 
+Po otevřeni webu bude uživatel nepřihlášený a bude se moct přihlásit přes formulář email, heslo - a podle toho určí přístup.
+Menu umožňuje přepínání mezi všemi ostatními kartami 
+Hlavní stránka - název organizace (fiktivní) MilitarProtect. Úvod, co to je za firmu, kde působí, může působit, co dělá (O nás)
+Vedlejší stránky: Technika a výzbroj seznam, vojáci- seznam, 
+Kontakt na organizaci.
 
 Admin (technik, který má přístup ke všemu)
 voják - přístup sám na sebe - přihlašovaní na školení, viditelnost všech zbraní 
@@ -12,3 +17,5 @@ možnost vyhledávaní vojáků a jejich hodnosti, vyznamenání a utvar, datab�
 
 první i druhá vrstva (voják):
 viditelná databáze veškeré techniky,
+
+první, druhá i třetí vrstva (Administrator): Může spravovat všechna data a emulovat jiného uživatele
