@@ -1,29 +1,81 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lucie\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\",
+  "WorkspaceRootPath": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\lucie\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\filda\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\lucie\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\models\\orcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\models\\orcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\filda\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\lucie\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\filda\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\lucie\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\filda\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\lucie\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\views\\test\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\filda\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\views\\test\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\views\\test\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\lucie\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\cs_bdas2_web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\filda\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\filda\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\filda\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\filda\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\filda\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\models\\lidesmazani.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\models\\lidesmazani.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\filda\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\filda\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\models\\dovolenky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\models\\dovolenky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\filda\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\models\\civilzamestnanci.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\models\\civilzamestnanci.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\filda\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\models\\zajmy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\models\\zajmy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\filda\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\filda\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\filda\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\models\\orcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\models\\orcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\filda\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|c:\\users\\filda\\source\\repos\\bsch2-semprace-stehlik_drexlerova\\cs_bdas2_web\\cs_bdas2_web\\cs_bdas2_web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{D5C6E7A8-08EF-42DC-A89B-0FFFE6FD54CB}|cs_bdas2_web\\cs_bdas2_web.csproj|solutionrelative:cs_bdas2_web\\cs_bdas2_web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -34,16 +86,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -57,12 +101,33 @@
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "cs_bdas2_web\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "cs_bdas2_web\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T15:19:16.939Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\lucie\\Source\\Repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Views\\Test\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Views\\Test\\Index.cshtml",
               "RelativeDocumentMoniker": "cs_bdas2_web\\Views\\Test\\Index.cshtml",
-              "ToolTip": "C:\\Users\\lucie\\Source\\Repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Views\\Test\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Views\\Test\\Index.cshtml",
               "RelativeToolTip": "cs_bdas2_web\\Views\\Test\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -71,63 +136,210 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "cs_bdas2_web\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "cs_bdas2_web\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T14:40:49.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TestController.cs",
-              "DocumentMoniker": "C:\\Users\\lucie\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Controllers\\TestController.cs",
-              "RelativeDocumentMoniker": "cs_bdas2_web\\Controllers\\TestController.cs",
-              "ToolTip": "C:\\Users\\lucie\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Controllers\\TestController.cs",
-              "RelativeToolTip": "cs_bdas2_web\\Controllers\\TestController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA1wB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T12:30:21.133Z",
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "cs_bdas2_web\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "cs_bdas2_web\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T14:40:48.121Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OrContext.cs",
-              "DocumentMoniker": "C:\\Users\\lucie\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Models\\OrContext.cs",
-              "RelativeDocumentMoniker": "cs_bdas2_web\\Models\\OrContext.cs",
-              "ToolTip": "C:\\Users\\lucie\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Models\\OrContext.cs",
-              "RelativeToolTip": "cs_bdas2_web\\Models\\OrContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T11:43:27.258Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "cs_bdas2_web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "cs_bdas2_web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T14:18:53.66Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lucie\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Program.cs",
-              "RelativeDocumentMoniker": "cs_bdas2_web\\Program.cs",
-              "ToolTip": "C:\\Users\\lucie\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Program.cs*",
-              "RelativeToolTip": "cs_bdas2_web\\Program.cs*",
-              "ViewState": "AgIAACUAAAAAAAAAAAAowDsAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T11:40:47.173Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "cs_bdas2_web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "cs_bdas2_web\\Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T14:41:10.322Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "cs_bdas2_web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "cs_bdas2_web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T14:46:04.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "cs_bdas2_web\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "cs_bdas2_web\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T14:19:57.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "cs_bdas2_web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "cs_bdas2_web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T14:39:51.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Dovolenky.cs",
+              "DocumentMoniker": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Models\\Dovolenky.cs",
+              "RelativeDocumentMoniker": "cs_bdas2_web\\Models\\Dovolenky.cs",
+              "ToolTip": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Models\\Dovolenky.cs",
+              "RelativeToolTip": "cs_bdas2_web\\Models\\Dovolenky.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T13:14:19.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Zajmy.cs",
+              "DocumentMoniker": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Models\\Zajmy.cs",
+              "RelativeDocumentMoniker": "cs_bdas2_web\\Models\\Zajmy.cs",
+              "ToolTip": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Models\\Zajmy.cs",
+              "RelativeToolTip": "cs_bdas2_web\\Models\\Zajmy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T13:13:46.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LideSmazani.cs",
+              "DocumentMoniker": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Models\\LideSmazani.cs",
+              "RelativeDocumentMoniker": "cs_bdas2_web\\Models\\LideSmazani.cs",
+              "ToolTip": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Models\\LideSmazani.cs",
+              "RelativeToolTip": "cs_bdas2_web\\Models\\LideSmazani.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T13:14:21.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "cs_bdas2_web\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "cs_bdas2_web\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T13:14:20.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CivilZamestnanci.cs",
+              "DocumentMoniker": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Models\\CivilZamestnanci.cs",
+              "RelativeDocumentMoniker": "cs_bdas2_web\\Models\\CivilZamestnanci.cs",
+              "ToolTip": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Models\\CivilZamestnanci.cs",
+              "RelativeToolTip": "cs_bdas2_web\\Models\\CivilZamestnanci.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAACiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T13:12:15.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "cs_bdas2_web\\Controllers\\TestController.cs",
+              "ToolTip": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Controllers\\TestController.cs",
+              "RelativeToolTip": "cs_bdas2_web\\Controllers\\TestController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T12:30:21.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OrContext.cs",
+              "DocumentMoniker": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Models\\OrContext.cs",
+              "RelativeDocumentMoniker": "cs_bdas2_web\\Models\\OrContext.cs",
+              "ToolTip": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Models\\OrContext.cs",
+              "RelativeToolTip": "cs_bdas2_web\\Models\\OrContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T11:43:27.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Program.cs",
+              "RelativeDocumentMoniker": "cs_bdas2_web\\Program.cs",
+              "ToolTip": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\Program.cs",
+              "RelativeToolTip": "cs_bdas2_web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T11:40:47.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\lucie\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\appsettings.json",
               "RelativeDocumentMoniker": "cs_bdas2_web\\appsettings.json",
-              "ToolTip": "C:\\Users\\lucie\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\appsettings.json",
+              "ToolTip": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\appsettings.json",
               "RelativeToolTip": "cs_bdas2_web\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-06T11:25:25.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T11:25:25.479Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 18,
               "Title": "cs_bdas2_web.csproj",
-              "DocumentMoniker": "C:\\Users\\lucie\\Source\\Repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\cs_bdas2_web.csproj",
+              "DocumentMoniker": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\cs_bdas2_web.csproj",
               "RelativeDocumentMoniker": "cs_bdas2_web\\cs_bdas2_web.csproj",
-              "ToolTip": "C:\\Users\\lucie\\Source\\Repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\cs_bdas2_web.csproj",
+              "ToolTip": "C:\\Users\\Filda\\source\\repos\\bsch2-SemPrace-Stehlik_Drexlerova\\cs_bdas2_web\\cs_bdas2_web\\cs_bdas2_web.csproj",
               "RelativeToolTip": "cs_bdas2_web\\cs_bdas2_web.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",

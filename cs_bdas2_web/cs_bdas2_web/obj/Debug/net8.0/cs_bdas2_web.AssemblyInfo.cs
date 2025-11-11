@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cs_bdas2_web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e44c762ce134388725810aa5bbb523fd47136bee")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ec9e4186d48bd0e8491f5921ad8bc31dc8dcc55")]
 [assembly: System.Reflection.AssemblyProductAttribute("cs_bdas2_web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cs_bdas2_web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
