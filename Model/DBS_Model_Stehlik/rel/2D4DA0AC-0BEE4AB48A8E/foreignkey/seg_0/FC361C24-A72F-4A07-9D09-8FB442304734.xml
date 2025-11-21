@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FC361C24-A72F-4A07-9D09-8FB442304734" containerWithKeyObject="365216C9-E8AA-F74C-0CDB-DF9D34EEA448" localFKIndex="15EE23FA-EDE8-8D8D-E578-5A37E9DBBE52" name="LETOUN_TECHNIKA_FK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>D7E241B7-A40B-270D-0B60-2E3AB6C64E37</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<referredTableLongName>TECHNIKA</referredTableLongName>
+<arc>544AA0D4-6B22-8A91-D2C6-EF4DBCC39935</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>46182E39-83C1-CA0C-853D-7C319FC5B020</referredTableID>
+<keyObject>4CC69BBE-D845-F559-2593-FA03BC06168D</keyObject>
+<referredKeyID>4CC69BBE-D845-F559-2593-FA03BC06168D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_technika</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>L</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

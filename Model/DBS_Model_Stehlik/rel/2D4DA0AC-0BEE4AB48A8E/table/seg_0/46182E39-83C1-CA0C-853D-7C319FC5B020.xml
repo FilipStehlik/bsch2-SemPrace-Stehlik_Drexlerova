@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="46182E39-83C1-CA0C-853D-7C319FC5B020" name="TECHNIKA">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Eviduje všechnu techniku používanou armádou (vozidla, letouny apod.).
+
+SP8: Každý kus techniky patří přesně jednomu útvaru (cizí klíč id_utvar v tabulce TECHNIKA).
+
+PP10: Techniku nelze přiřadit více útvarům současně (kontrola při UPDATE TECHNIKA.id_utvar).]]></commentInRDBMS>
+<generatorID>25AFD1D9-B5C2-1C7B-F5E9-DB2521AC585A</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_technika" id="26A8D50D-3703-CCB8-ADD6-B3E6DB269DB6">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>8170553E-3DA6-127C-F4E9-A827B938CBD8</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="model" id="AD31CDBC-2922-7325-C9E2-CA498EB56411">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>463A2114-1B59-B882-2E92-0CFDD9051D6E</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum_vyroby" id="CEFE9C95-6B8E-7F2D-BF97-B170AF3679A5">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>88870884-BABA-9951-13EB-AC53B7B18DA9</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="typ" id="6894633D-704B-2A62-2A01-47FF3843A792">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>7FB94B49-501A-C33E-8E18-9A6B4123FAF8</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<constraintName>technika_typ_check</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="L" description=""/>
+<valueDef value="V" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<defaultOntNull>true</defaultOntNull>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="seriove_cislo" id="A8DA33F3-0BF2-DBED-2E5B-F2EAE5952255">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>FA105BC1-1264-875B-521C-1DE46AEFC98F</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="posledni_kontrola" id="59613796-8974-84F7-74B7-15366CB6CB75">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>3A660475-BE21-2D5F-38AF-352E8F43277C</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_utvar" id="C6C4615D-B815-BEB5-6765-FAF650A5A127">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>145200C8-8C8C-FA81-CCB5-AD0ED825B6F0</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="031065D7-3666-7CF0-57E7-52DACFBCD84A" referredColumn="6AC0093E-C1FB-2317-7217-A2B87F57F955"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4CC69BBE-D845-F559-2593-FA03BC06168D" name="TECHNIKA_PK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>2204F136-66B9-8DDE-7C37-3A4B4557EF45</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26A8D50D-3703-CCB8-ADD6-B3E6DB269DB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A2C7B638-D367-7317-928D-854FE59E5F31" name="TECHNIKA_seriove_cislo_UN">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 03:50:54 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8DA33F3-0BF2-DBED-2E5B-F2EAE5952255"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="938135C6-19CE-E46B-0A80-C0A2EEF10D1B" name="TECHNIKA_utvar_IDX">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:52:02 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6C4615D-B815-BEB5-6765-FAF650A5A127"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59B48FDB-A794-B483-5F09-372796BD2F8B" name="TECHNIKA_model_IDX">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 03:15:49 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD31CDBC-2922-7325-C9E2-CA498EB56411"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="15E2E80B-F70C-7DB6-3EC3-7059AA56B5F6" name="TECHNIKA_UTVAR_FK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>6D8CB75E-0E1D-BB5B-0F49-6F857F389C01</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6C4615D-B815-BEB5-6765-FAF650A5A127"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

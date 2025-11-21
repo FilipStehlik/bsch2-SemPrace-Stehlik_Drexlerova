@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1AA945AA-6A76-928E-E00D-27DB93717714" containerWithKeyObject="FB17C39C-465B-417A-FF2D-F8DAD44A9EA1" localFKIndex="88EFA3C5-355D-2645-3EC1-77D6ED6EBA7B" name="NASAZENI_TECHNIKY_MISE_FK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>1C584FAB-04EE-6EE4-F12D-F709EAB51842</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<referredTableLongName>MISE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6C80B024-1146-678E-CCE9-333EDFA0A149</referredTableID>
+<keyObject>0C2B2AD0-763E-766C-A115-859F5BAC392A</keyObject>
+<referredKeyID>0C2B2AD0-763E-766C-A115-859F5BAC392A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_mise</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

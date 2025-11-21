@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_14" directorySegmentName="seg_0" id="CD46B6F6-FF40-92F8-DE2D-77D6C910EA51">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 01:21:09 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<sourcePk>7EB7978B-9A92-36D5-8A9F-1F69E9C8F9CA</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>řadí</nameOnSource>
+<nameOnTarget>je řazen</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9AB995B6-8677-51DE-3790-8C17C0807A64</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3E8DDFF1-D38B-23A5-9CEF-BD53897A8A66</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

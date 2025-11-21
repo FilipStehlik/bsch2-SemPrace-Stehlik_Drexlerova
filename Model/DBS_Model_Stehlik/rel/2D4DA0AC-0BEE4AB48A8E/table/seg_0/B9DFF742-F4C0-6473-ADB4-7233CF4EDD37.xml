@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B9DFF742-F4C0-6473-ADB4-7233CF4EDD37" name="ZBRANE">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Eviduje všechny zbraně ve výzbroji. Každá zbraň má název, datum výroby, výrobní číslo.
+Historie přidělení jednotlivým vojákům je vedená v tabulce PRIDELENI_ZBRANI.
+
+SP11: Každá zbraň musí být přidělena alespoň jednomu vojákovi v historii (vazba přes PRIDELENI_ZBRANI).
+]]></commentInRDBMS>
+<generatorID>9BF99BD9-BEFA-D3BD-B565-F1A0130D8B25</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<ordsAlias>zbran</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_zbran" id="76DC8A69-DE0D-4383-BDB7-FE4B48355D8D">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>AFE9A31F-46EB-F00B-64CB-CD9338F86931</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazev" id="9B084464-A11A-CC0D-B0DC-F6D490466433">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>6A02BFA0-4A0A-5C92-86F7-BE5FB0F859F4</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum_vyroby" id="AC1DE7AE-1EB0-D658-C827-9470BE7681A4">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>9F8DF2D9-0636-8CB8-F949-F780840147F2</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vyrobni_cislo" id="4386EFAF-9AD6-31B1-3EE8-CE780CAB7152">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>E4B61213-90DA-2F0A-2B9B-5D63ED37D822</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ED83E664-8B96-BE68-5914-F9413C6C5DD7" name="ZBRAN_PK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>37136F72-BEC3-6919-3256-EDF5B01360B1</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76DC8A69-DE0D-4383-BDB7-FE4B48355D8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E6D2D85-8B0C-36F8-0ED9-6977D25D298E" name="ZBRAN_vyrobni_cislo_UN">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 03:53:33 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4386EFAF-9AD6-31B1-3EE8-CE780CAB7152"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47BCC32B-AE68-39C7-F930-0E27BCF4B043" name="ZBRANE_nazev_IDX">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-19 01:46:48 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B084464-A11A-CC0D-B0DC-F6D490466433"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

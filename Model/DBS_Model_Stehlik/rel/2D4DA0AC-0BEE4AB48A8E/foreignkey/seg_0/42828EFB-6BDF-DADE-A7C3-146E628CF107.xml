@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="42828EFB-6BDF-DADE-A7C3-146E628CF107" containerWithKeyObject="74778716-2DA7-2864-7BB6-F6B800544256" localFKIndex="C6E2B542-98DD-357C-5261-10A9CB7DC09D" name="VOZIDLO_TECHNIKA_FK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>9FD64F47-9764-12E4-D248-F42411E3073C</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<referredTableLongName>TECHNIKA</referredTableLongName>
+<arc>544AA0D4-6B22-8A91-D2C6-EF4DBCC39935</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>46182E39-83C1-CA0C-853D-7C319FC5B020</referredTableID>
+<keyObject>4CC69BBE-D845-F559-2593-FA03BC06168D</keyObject>
+<referredKeyID>4CC69BBE-D845-F559-2593-FA03BC06168D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_technika</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>V</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B661F4FE-44F8-EBAB-8DC3-F6C807EA4EF9" name="UTVAR">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:30:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Eviduje jednotlivé vojenské útvary v rámci organizace MilitarProtect.
+
+SP5: Každý útvar má unikátní název.
+IO3: Telefon útvaru musí být zadán ve formátu +420XXXXXXXXX.
+PP2: Útvar musí mít přiřazeno alespoň jednoho vojáka.]]></commentInRDBMS>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_utvar" id="6BA95734-FA06-5CFB-0BE2-E47F47C5DC4B">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:43:35 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazev" id="320CAB69-D452-C5AC-952C-BD4014C49C9E">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:43:42 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="zkratka" id="76D191E4-CB04-3AD8-DC32-444E1FF37AA9">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:43:49 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefon" id="3F5E4876-DB80-3DBD-BE96-8C35D4595FE7">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:43:46 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="24A25FE0-B519-698C-31BD-307A7726D3A6" name="UTVAR PK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:45:29 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6BA95734-FA06-5CFB-0BE2-E47F47C5DC4B</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="3DFAA0F5-A97D-2F69-A787-90C75BB0CA06" name="utvar_nazev_UN">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:51:32 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<newElementsIDs>320CAB69-D452-C5AC-952C-BD4014C49C9E</newElementsIDs>
+<usedAttributes>
+<attributeRef>320CAB69-D452-C5AC-952C-BD4014C49C9E</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="AC01E125-76CF-6DDE-5080-0C4AFEEF6AD5" name="utvar_zkratka_UN">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:51:55 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<newElementsIDs>76D191E4-CB04-3AD8-DC32-444E1FF37AA9</newElementsIDs>
+<usedAttributes>
+<attributeRef>76D191E4-CB04-3AD8-DC32-444E1FF37AA9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AFBB60B2-531A-05E4-8B8E-A2DFB73DB317" name="LETOUN">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:29:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Specializace tabulky TECHNIKA – eviduje parametry pro letouny.
+
+SP10: Každý letoun odpovídá jednomu záznamu v tabulce TECHNIKA (ARC).
+IO8: Maximální výška i nosnost musí být kladné hodnoty.]]></commentInRDBMS>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>25AFD1D9-B5C2-1C7B-F5E9-DB2521AC585A</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="max_vyska" id="4A14B6D6-5007-7BD6-02AF-E3F76CAB572D">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:00:13 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="max_nosnost" id="1E8A1F6B-4C84-AFAA-DB86-E1666DD60C8B">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:00:31 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="celkove_hodiny" id="1D15C46F-104E-B543-5E69-A9EE12D64DD9">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:00:43 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,40 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="REVIZE_SKOLENI" directorySegmentName="seg_0" id="AC80B131-8449-8048-D084-9F98C131F277">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:20:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Eviduje absolvování školení jednotlivými vojáky (vazba M:N mezi VOJAK a SKOLENI).
+
+SP15: Každý záznam odkazuje na existujícího vojáka a školení.
+IO15: Datum absolvování nesmí být před datem zahájení školení.
+PP12: Záznam o školení lze vytvořit až po jeho ukončení.]]></commentInRDBMS>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>je školen</nameOnSource>
+<nameOnTarget>školí</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>3E8DDFF1-D38B-23A5-9CEF-BD53897A8A66</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F195E39D-92FF-5FDA-681C-05E63D0238B6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="datum_absolvovani" id="EA764049-0104-8C59-0B9E-6256E3C537A4">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:29:26 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

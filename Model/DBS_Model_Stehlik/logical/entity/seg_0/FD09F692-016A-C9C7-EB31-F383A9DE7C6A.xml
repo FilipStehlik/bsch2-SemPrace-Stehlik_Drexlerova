@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FD09F692-016A-C9C7-EB31-F383A9DE7C6A" name="VYZNAMENANI">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:29:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Eviduje vojenská vyznamenání.
+
+SP17: Každé vyznamenání má unikátní název.
+IO17: Název vyznamenání musí být unikátní.
+PP8: Nové vyznamenání lze udělit pouze aktivnímu vojákovi.]]></commentInRDBMS>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_vyznamenani" id="8A50F1A9-0AB8-BFE0-DF51-5D290E402329">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:09:51 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazev" id="B528F67A-F421-D2CB-E7DB-CEC889C7A117">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:10:03 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<ownDataTypeParameters>70 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="popis" id="046A28D3-D54A-5D9D-D5CC-C69CE4619043">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:10:45 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="790C93B6-FB0E-E307-BC69-B7CA1A93FF7A" name="VYZNAMENANI PK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:10:00 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8A50F1A9-0AB8-BFE0-DF51-5D290E402329</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

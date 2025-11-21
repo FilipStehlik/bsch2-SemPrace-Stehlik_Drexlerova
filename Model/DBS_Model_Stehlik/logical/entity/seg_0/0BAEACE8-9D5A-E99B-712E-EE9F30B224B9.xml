@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0BAEACE8-9D5A-E99B-712E-EE9F30B224B9" name="DOVOLENKA">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:05:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Eviduje dovolené jednotlivých vojáků.
+
+SP16: Každý záznam dovolené odkazuje na přesně jednoho vojáka.
+IO16: Datum do musí být pozdější než datum od.
+PP4: Voják nesmí mít překrývající se dovolenky.]]></commentInRDBMS>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_dovolenka" id="5555EB38-2182-72C0-BFF6-325ABB1C5491">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:05:34 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datum_zahajeni" id="4738CD66-3C1B-5E99-322F-7DD536E5FC8E">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:06:06 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datum_ukonceni" id="350F074F-6591-75C1-4E17-651A5F494910">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:06:22 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="popis" id="8896D834-5297-8EED-038C-F82BF3ABC4BF">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:06:30 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_vojak" id="7AC80EC8-5AD3-9962-945B-80DB186FEFB7">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:21:56 UTC</createdTime>
+<generatorID>F33AFF63-F04F-456A-9354-50E1F03E1686</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<referedAttribute>08E7F168-C590-2425-D90C-F871693DAFD0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="849E074C-23BA-F243-AF73-F5BBBFEC5C48" name="DOVOLENKA PK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:05:45 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5555EB38-2182-72C0-BFF6-325ABB1C5491</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

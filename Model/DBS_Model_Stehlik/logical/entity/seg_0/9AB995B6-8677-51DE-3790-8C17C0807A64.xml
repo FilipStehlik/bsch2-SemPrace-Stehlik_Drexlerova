@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9AB995B6-8677-51DE-3790-8C17C0807A64" name="STAV_POHOTOVOSTI">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:07:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Číselník stavů pohotovosti vojáků (dovolena, mise, nemoc, sluzba, vycvik).
+
+SP7: Každý stav pohotovosti má jedinečný název.
+IO5: Název stavu musí být unikátní.]]></commentInRDBMS>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_stav_pohotovosti" id="218ADB38-75D7-5B8F-4EA2-8834F5B053F2">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:07:24 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazev" id="F780EE14-C35C-CA1E-0DBF-B1648F70717C">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:07:37 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<constraintName>stav_pohotovosti_nazev_check</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="dovolena" description=""/>
+<valueDef value="mise" description=""/>
+<valueDef value="nemoc" description=""/>
+<valueDef value="sluzba" description=""/>
+<valueDef value="vycvik" description=""/>
+</listOfValues>
+<defaultValue>sluzba</defaultValue>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7EB7978B-9A92-36D5-8A9F-1F69E9C8F9CA" name="STAV_POHOTOVOSTI PK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:07:36 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>218ADB38-75D7-5B8F-4EA2-8834F5B053F2</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="19338912-7AE4-7658-2A65-4B9AA93E8D25" name="stav_pohotovosti_nazev_UN">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 03:45:15 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<newElementsIDs>F780EE14-C35C-CA1E-0DBF-B1648F70717C</newElementsIDs>
+<usedAttributes>
+<attributeRef>F780EE14-C35C-CA1E-0DBF-B1648F70717C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

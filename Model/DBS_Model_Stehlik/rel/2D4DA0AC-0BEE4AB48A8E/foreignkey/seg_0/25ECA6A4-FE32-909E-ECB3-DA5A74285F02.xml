@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="25ECA6A4-FE32-909E-ECB3-DA5A74285F02" containerWithKeyObject="DC97118E-B9B5-000A-4021-D90E5C98160E" localFKIndex="6C181673-B405-EBA5-C5B1-DD98F1B02C9D" name="PRIDELENI_ZBRANE_ZBRAN_FK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>1F597449-0597-BC6B-EEFB-47CA8D5B6AD1</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<referredTableLongName>ZBRANE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B9DFF742-F4C0-6473-ADB4-7233CF4EDD37</referredTableID>
+<keyObject>ED83E664-8B96-BE68-5914-F9413C6C5DD7</keyObject>
+<referredKeyID>ED83E664-8B96-BE68-5914-F9413C6C5DD7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_zbran</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

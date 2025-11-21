@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PRIDELENI_ZBRANE" directorySegmentName="seg_0" id="1F597449-0597-BC6B-EEFB-47CA8D5B6AD1">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:19:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Historie přidělení zbraní jednotlivým vojákům.
+
+SP19: M:N vztah mezi tabulkami VOJAK a ZBRAN.
+IO10: Datum vrácení zbraně musí být pozdější nebo rovné datu přidělení.
+PP5: Voják nemůže mít současně přidělené dvě stejné zbraně.]]></commentInRDBMS>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>vlastní</nameOnSource>
+<nameOnTarget>je vlastněna</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>3E8DDFF1-D38B-23A5-9CEF-BD53897A8A66</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9BF99BD9-BEFA-D3BD-B565-F1A0130D8B25</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="datum_prideleni" id="FE1DDA05-22C9-FDA3-BC6D-7DF7EEE76739">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:28:19 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="datum_vraceni" id="EA0E0331-EE9D-4D95-867D-854B56ED36DC">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:28:38 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="poznamka" id="03BDA36D-6064-4334-AEAC-8C358E5397AC">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:28:47 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

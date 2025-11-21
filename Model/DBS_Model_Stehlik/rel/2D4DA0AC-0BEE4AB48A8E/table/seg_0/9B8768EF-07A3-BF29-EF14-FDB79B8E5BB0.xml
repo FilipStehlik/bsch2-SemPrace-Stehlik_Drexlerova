@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9B8768EF-07A3-BF29-EF14-FDB79B8E5BB0" name="STAVY_POHOTOVOSTI">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Číselník stavů pohotovosti vojáků (dovolena, mise, nemoc, sluzba, vycvik).
+
+SP7: Každý stav pohotovosti má jedinečný název (UNIQUE constraint na stavy_pohotovosti.nazev).]]></commentInRDBMS>
+<generatorID>9AB995B6-8677-51DE-3790-8C17C0807A64</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<ordsAlias>stav_pohotovosti</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_stav_pohotovosti" id="EE53A560-4FA3-26AB-4757-DD68CF730B5F">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>218ADB38-75D7-5B8F-4EA2-8834F5B053F2</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazev" id="67F5D465-6078-AE7A-D2F6-DEE479982C99">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>F780EE14-C35C-CA1E-0DBF-B1648F70717C</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<constraintName>stav_pohotovosti_nazev_check</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="dovolena" description=""/>
+<valueDef value="mise" description=""/>
+<valueDef value="nemoc" description=""/>
+<valueDef value="sluzba" description=""/>
+<valueDef value="vycvik" description=""/>
+</listOfValues>
+<defaultValue>sluzba</defaultValue>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B18945A7-FF25-F3FE-479B-B2D81C2B505B" name="STAV_POHOTOVOSTI_PK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>7EB7978B-9A92-36D5-8A9F-1F69E9C8F9CA</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE53A560-4FA3-26AB-4757-DD68CF730B5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2585AFF-36BE-70AA-DA1F-E9EC5250F631" name="STAV_POHOTOVOSTI_nazev_UN">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 03:46:19 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67F5D465-6078-AE7A-D2F6-DEE479982C99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

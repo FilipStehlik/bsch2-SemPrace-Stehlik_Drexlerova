@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AF8DE111-4CB4-2F68-531B-34009F7AC180" name="UCASTI_MISI">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Vazební tabulka M:N mezi VOJAK a MISE, eviduje účast vojáků na jednotlivých misích včetně role a dat nasazení.
+
+SP12: Jeden voják se může účastnit více misí (M:N vazba přes UCASTI_MISI).
+SP13: Každý záznam účasti na misi musí odkazovat na existujícího vojáka a misi (cizí klíče v UCASTI_MISI).
+
+PP11: Po ukončení mise nelze měnit seznam účastníků (kontrola při INSERT/DELETE z UCASTI_MISI kde mise je již ukončená).]]></commentInRDBMS>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<ordsAlias>ucast_mise</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_vojak" id="6A36C71C-CCAB-F0DF-7ECF-B4F6F73E283F">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD9CB3B2-4B9B-08CA-E7B3-C545128C8033" referredColumn="3F5FF551-DD44-00DD-BB6D-618D5D09F9CC"/>
+</associations>
+</Column>
+<Column name="id_mise" id="7FC28EAA-F7C4-783C-738D-70E6EC8B376A">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A330D18C-CD63-8DEF-905D-4F01419C4715" referredColumn="CE9AF429-509E-2120-C6BB-A6B6A40337E5"/>
+</associations>
+</Column>
+<Column name="role" id="1D8B279C-BFA4-8898-56FB-5BC9DA7AEAEC">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>AB84BE12-53FC-D0E1-814E-82A57935AB9A</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 CHAR</dataTypeSize>
+<ownDataTypeParameters>80 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+<Column name="datum_nasazeni" id="BC2EE048-2D55-DEF8-4D90-80DFD8703E5D">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>61561574-A71E-132A-2B7C-7746C3BED327</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="datum_ukonceni" id="EDD314EC-7B31-B2FA-75AD-FEC6EBB74730">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>B2FAE141-2C9E-539C-8BC9-788C2D95A63B</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="177C549C-D330-AEB1-14F2-0E149B024D0F" name="UCAST_MISE_PK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A36C71C-CCAB-F0DF-7ECF-B4F6F73E283F"/>
+<colUsage columnID="7FC28EAA-F7C4-783C-738D-70E6EC8B376A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3477028-0F37-7ACC-8E81-43D49DACF7A9" name="UCAST_MISE__IDX">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 03:11:17 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A36C71C-CCAB-F0DF-7ECF-B4F6F73E283F"/>
+<colUsage columnID="7FC28EAA-F7C4-783C-738D-70E6EC8B376A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6162E76-87A7-3DB9-3025-B2308B68575B" name="UCAST_MISE_VOJAK_FK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>82363381-4E59-AEC6-2205-BB39FED3BE36</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A36C71C-CCAB-F0DF-7ECF-B4F6F73E283F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17098769-D4B5-E421-18FD-4026CE68EE80" name="UCAST_MISE_MISE_FK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>82363381-4E59-AEC6-2205-BB39FED3BE36</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7FC28EAA-F7C4-783C-738D-70E6EC8B376A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

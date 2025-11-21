@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="544AA0D4-6B22-8A91-D2C6-EF4DBCC39935" name="FKArc_1">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<mandatory>false</mandatory>
+<reverseArc>true</reverseArc>
+<table>46182E39-83C1-CA0C-853D-7C319FC5B020</table>
+<discriminatorColumn>6894633D-704B-2A62-2A01-47FF3843A792</discriminatorColumn>
+<fkeys>
+<fkeyID>42828EFB-6BDF-DADE-A7C3-146E628CF107</fkeyID>
+<fkeyID>FC361C24-A72F-4A07-9D09-8FB442304734</fkeyID>
+</fkeys>
+</FKArc>

@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="25AFD1D9-B5C2-1C7B-F5E9-DB2521AC585A" name="TECHNIKA">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:29:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Eviduje všechnu techniku používanou armádou (vozidla, letouny apod.).
+
+SP8: Každý kus techniky patří přesně jednomu útvaru.
+IO6: Rok výroby techniky nesmí být v budoucnosti.
+PP4: Techniku nelze přiřadit více než jednomu útvaru současně.]]></commentInRDBMS>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_technika" id="8170553E-3DA6-127C-F4E9-A827B938CBD8">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:55:29 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="model" id="463A2114-1B59-B882-2E92-0CFDD9051D6E">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:55:48 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datum_vyroby" id="88870884-BABA-9951-13EB-AC53B7B18DA9">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:56:21 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="typ" id="7FB94B49-501A-C33E-8E18-9A6B4123FAF8">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:56:38 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<constraintName>technika_typ_check</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="L" description=""/>
+<valueDef value="V" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="seriove_cislo" id="FA105BC1-1264-875B-521C-1DE46AEFC98F">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:57:35 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="posledni_kontrola" id="3A660475-BE21-2D5F-38AF-352E8F43277C">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:58:01 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_utvar" id="145200C8-8C8C-FA81-CCB5-AD0ED825B6F0">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:23:54 UTC</createdTime>
+<generatorID>6D8CB75E-0E1D-BB5B-0F49-6F857F389C01</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6BA95734-FA06-5CFB-0BE2-E47F47C5DC4B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2204F136-66B9-8DDE-7C37-3A4B4557EF45" name="TECHNIKA PK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:55:47 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8170553E-3DA6-127C-F4E9-A827B938CBD8</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="52003FE9-056C-378B-9E76-B8A395160F70" name="technika_seriove_cislo_UN">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 03:47:40 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<newElementsIDs>FA105BC1-1264-875B-521C-1DE46AEFC98F</newElementsIDs>
+<usedAttributes>
+<attributeRef>FA105BC1-1264-875B-521C-1DE46AEFC98F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

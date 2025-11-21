@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5E6BB455-A466-BC9F-BF15-B11B235285BE" name="HODNOSTI">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Eviduje vojenské hodnosti, které jsou přidělovány vojákům.
+
+SP6: Každá hodnost je číselník s jedinečným názvem (UNIQUE constraint na hodnosti.nazev).
+
+PP3: Hodnost vojáka lze změnit pouze povýšením, nikoli degradací (kontrola při UPDATE VOJACI.id_hodnost).]]></commentInRDBMS>
+<generatorID>44A26B0A-9152-85D1-0344-CB7D0A87B1EF</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<ordsAlias>hodnost</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_hodnost" id="7F2244B8-EE74-3F40-2553-31F47E8FB4E0">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>F29B544B-8AE0-3813-5F74-B60F80B89A90</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazev" id="0E0CC6AD-3E7D-175E-38B7-11371FBF4DC1">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>27DE09B0-7A21-1FD8-46E5-CBB3B448051A</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<constraintName>hodnost_nazev_check</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="operator" description=""/>
+<valueDef value="velitel_jednotky" description=""/>
+<valueDef value="velitel_tymu" description=""/>
+<valueDef value="vykonny_reditel" description=""/>
+</listOfValues>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CB67113C-DEF1-492A-8294-B6B9284A08D1" name="HODNOST_PK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>DCF09119-F080-1D90-F305-770B37E91361</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F2244B8-EE74-3F40-2553-31F47E8FB4E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED21C0CC-1FF2-4F34-0D3F-889B251C92C3" name="HODNOST_nazev_UN">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 03:36:15 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E0CC6AD-3E7D-175E-38B7-11371FBF4DC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

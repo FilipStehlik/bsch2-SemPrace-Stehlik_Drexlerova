@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="UDELENI_VYZNAMENANI" directorySegmentName="seg_0" id="594A632C-EA42-15D3-3F0D-E1A9FBA9028C">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:21:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Vazební tabulka M:N mezi VOJAK a VYZNAMENANI – eviduje, kdo kdy a s jakou poznámkou získal ocenění.
+
+SP18: M:N vazba mezi VOJAK a VYZNAMENANI.
+IO18: Datum udělení nesmí být v budoucnosti.
+PP9: Vyznamenání lze udělit jen jednou za stejný čin.]]></commentInRDBMS>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>zasluhuje</nameOnSource>
+<nameOnTarget>je zasloužena</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>3E8DDFF1-D38B-23A5-9CEF-BD53897A8A66</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FD09F692-016A-C9C7-EB31-F383A9DE7C6A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="datum" id="575FAAF7-BEF9-7518-BDEA-79E8F2CC152F">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:26:53 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="poznamka" id="99C06AEF-3D51-1ADD-1F59-E6C89B4F3D4D">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 00:27:22 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

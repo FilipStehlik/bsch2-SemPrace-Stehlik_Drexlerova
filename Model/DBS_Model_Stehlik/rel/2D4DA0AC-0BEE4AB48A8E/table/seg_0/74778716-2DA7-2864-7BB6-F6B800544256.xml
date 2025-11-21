@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="74778716-2DA7-2864-7BB6-F6B800544256" name="VOZIDLA">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Specializace tabulky TECHNIKA – eviduje parametry pro pozemní vozidla.
+
+SP9: Každé vozidlo odpovídá jednomu záznamu v tabulce TECHNIKA s typem 'V' (ARC constraint).]]></commentInRDBMS>
+<generatorID>5A08A648-D013-2765-DA6E-77B91925ABBA</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<ordsAlias>vozidlo</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_technika" id="F9FF9AB2-86C6-FF75-E49D-4EBAAC8B60D5">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>8170553E-3DA6-127C-F4E9-A827B938CBD8</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="42828EFB-6BDF-DADE-A7C3-146E628CF107" referredColumn="26A8D50D-3703-CCB8-ADD6-B3E6DB269DB6"/>
+</associations>
+</Column>
+<Column name="pocet_mist" id="A9973ECB-D355-1E80-C81F-51788C8F6A50">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>CB79A9EE-FBC4-F96B-A2B3-6541AD60B311</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<constraintName>vozidlo_pocet_mist_check</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 21c" definition="pocet_mist &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pocet_kol" id="4BE0A475-D6D5-A71D-3AC1-937B3F77EF53">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>0489ACBC-9A32-1006-DC60-C407BE954E36</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<constraintName>vozidlo_pocet_kol_check</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 21c" definition="pocet_kol &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="najeto_km" id="A0279168-545A-4BBC-D48C-783778124E09">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>4752903D-9E3A-F189-0861-B79A20CA138D</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="39DBDDC1-792A-4F68-111B-89DC64FEC4AB" name="VOZIDLO_PK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>2204F136-66B9-8DDE-7C37-3A4B4557EF45</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9FF9AB2-86C6-FF75-E49D-4EBAAC8B60D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6E2B542-98DD-357C-5261-10A9CB7DC09D" name="VOZIDLO_TECHNIKA_FK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>9FD64F47-9764-12E4-D248-F42411E3073C</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9FF9AB2-86C6-FF75-E49D-4EBAAC8B60D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

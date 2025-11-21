@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="422A4FDA-4B86-2504-4315-E8ACAB503D3B" containerWithKeyObject="FB17C39C-465B-417A-FF2D-F8DAD44A9EA1" localFKIndex="E5FC8D8B-864B-6906-1324-4C3A13B6B110" name="NASAZENI_TECHNIKY_TECHNIKA_FK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>1C584FAB-04EE-6EE4-F12D-F709EAB51842</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<referredTableLongName>TECHNIKA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>46182E39-83C1-CA0C-853D-7C319FC5B020</referredTableID>
+<keyObject>4CC69BBE-D845-F559-2593-FA03BC06168D</keyObject>
+<referredKeyID>4CC69BBE-D845-F559-2593-FA03BC06168D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_technika</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

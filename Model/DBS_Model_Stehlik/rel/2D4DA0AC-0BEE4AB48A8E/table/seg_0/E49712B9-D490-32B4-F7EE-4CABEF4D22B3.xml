@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E49712B9-D490-32B4-F7EE-4CABEF4D22B3" name="VYZNAMENANI">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Eviduje vojenská vyznamenání.
+
+SP17: Každé vyznamenání má unikátní název (číselník VYZNAMENANI).
+
+PP8: Vyznamenání lze udělit pouze aktivnímu vojákovi (kontrola stavu pohotovosti při INSERT do UDELENI_VYZNAMENANI).
+PP9: Stejné vyznamenání nelze udělit vojákovi vícekrát za tentýž čin (kontrola duplicity v UDELENI_VYZNAMENANI).]]></commentInRDBMS>
+<generatorID>FD09F692-016A-C9C7-EB31-F383A9DE7C6A</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_vyznamenani" id="BCC6F6FC-9FE7-1FD9-8537-00DE54064385">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>8A50F1A9-0AB8-BFE0-DF51-5D290E402329</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazev" id="C271D0AC-7465-1B21-DD97-9ED0BB601379">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>B528F67A-F421-D2CB-E7DB-CEC889C7A117</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<ownDataTypeParameters>70 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="popis" id="9E706396-6D8F-76B3-C356-9E1D47A5CE45">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>046A28D3-D54A-5D9D-D5CC-C69CE4619043</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4F55786B-1248-251E-3B5E-F9094459460E" name="VYZNAMENANI_PK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>790C93B6-FB0E-E307-BC69-B7CA1A93FF7A</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCC6F6FC-9FE7-1FD9-8537-00DE54064385"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

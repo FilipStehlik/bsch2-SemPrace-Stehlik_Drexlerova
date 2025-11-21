@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="E67C66A4-1D2B-FFFE-21CA-95A9B2F777F9" mainViewID="8CBEA81C-A3AC-3957-3869-02581C44A9C8">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:28:19 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

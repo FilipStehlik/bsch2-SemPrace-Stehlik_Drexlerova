@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="279C5EF0-6AC7-9758-1182-BEDA1EBC398B" name="UTVARY">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Eviduje jednotlivé vojenské útvary v rámci organizace MilitarProtect.
+
+SP5: Každý útvar má unikátní název (UNIQUE constraint na utvary.nazev).
+
+PP2: Útvar musí mít přiřazeného alespoň jednoho vojáka (kontrola při DELETE z VOJACI nebo INSERT do UTVARY).]]></commentInRDBMS>
+<generatorID>B661F4FE-44F8-EBAB-8DC3-F6C807EA4EF9</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<ordsAlias>utvar</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_utvar" id="6AC0093E-C1FB-2317-7217-A2B87F57F955">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>6BA95734-FA06-5CFB-0BE2-E47F47C5DC4B</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazev" id="108C1DD8-A47D-E435-341F-347845626AF8">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>320CAB69-D452-C5AC-952C-BD4014C49C9E</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="zkratka" id="E2265B9D-5DB0-9AFC-6B84-27070671DF0C">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>76D191E4-CB04-3AD8-DC32-444E1FF37AA9</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefon" id="77CD6CBE-114A-0DFD-7442-8445A9C286EC">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>3F5E4876-DB80-3DBD-BE96-8C35D4595FE7</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6538A80B-B805-73F7-0CFC-EECFD2735930" name="UTVAR_PK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>24A25FE0-B519-698C-31BD-307A7726D3A6</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6AC0093E-C1FB-2317-7217-A2B87F57F955"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7AD79834-9B4F-B78D-551E-B76EEC3C85FE" name="UTVAR_nazev_UN">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>3DFAA0F5-A97D-2F69-A787-90C75BB0CA06</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="108C1DD8-A47D-E435-341F-347845626AF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21B99A2D-9EAB-4B12-EA87-931BBD57951A" name="UTVAR_zkratka_UN">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>AC01E125-76CF-6DDE-5080-0C4AFEEF6AD5</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2265B9D-5DB0-9AFC-6B84-27070671DF0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

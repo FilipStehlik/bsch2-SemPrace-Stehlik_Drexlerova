@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3E8DDFF1-D38B-23A5-9CEF-BD53897A8A66" name="VOJAK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:28:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Základní entita systému – eviduje všechny vojáky organizace MilitarProtect.
+Obsahuje osobní údaje, kontakt, datum narození a vazby na hodnost a útvar.
+
+SP1: Každá tabulka musí mít jednoznačný primární klíč.
+SP2: Každý voják patří přesně do jednoho útvaru.
+SP3: Každý voják má přesně jednu hodnost.
+SP4: Každý voják může mít pouze jeden aktuální stav pohotovosti.
+
+IO1: Datum narození vojáka musí být starší než 18 let (voják musí být plnoletý).
+IO2: E-mail vojáka musí být unikátní.
+
+PP1: Voják nesmí být zařazen do mise ani školení, pokud je v neaktivním stavu pohotovosti.]]></commentInRDBMS>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_vojak" id="08E7F168-C590-2425-D90C-F871693DAFD0">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:36:42 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="jmeno" id="CCF87DD0-EA63-9A35-5833-11E10EB21434">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:34:49 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prijmeni" id="E6A97DBB-7C68-B496-0D8F-B473828ECB52">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:34:53 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datum_narozeni" id="6B1FBC7F-9ADD-C6B4-BF49-CD92219B43C0">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:34:56 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="0E52EC57-A35A-5B76-943A-562D3C885C2A">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:35:02 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 CHAR</dataTypeSize>
+<ownDataTypeParameters>70 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefon" id="883C5C2D-102C-2995-EEDC-21FE7915E72D">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:35:06 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_stav_pohotovosti" id="BDAAF4C7-57CC-7F24-B8A4-785E3E15AF5B">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 01:21:09 UTC</createdTime>
+<generatorID>CD46B6F6-FF40-92F8-DE2D-77D6C910EA51</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<referedAttribute>218ADB38-75D7-5B8F-4EA2-8834F5B053F2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_hodnost" id="E7BAF659-4EC1-EF2E-31F1-9C7FAB902C86">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 01:21:15 UTC</createdTime>
+<generatorID>18C86564-F0A4-AEEB-BB96-8D87F3C254A0</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<referedAttribute>F29B544B-8AE0-3813-5F74-B60F80B89A90</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_utvar" id="6666D17A-341A-72A8-EC46-15385F1FC946">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 01:21:38 UTC</createdTime>
+<generatorID>3CD71B14-4066-08A5-AD15-4E648FEDD3A6</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<referedAttribute>6BA95734-FA06-5CFB-0BE2-E47F47C5DC4B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="37327627-5C56-94A3-F70F-6A32456712DF" name="VOJAK PK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:36:14 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>08E7F168-C590-2425-D90C-F871693DAFD0</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="6061AA2A-635B-02F3-8036-4F52677D3DAE" name="vojak_email_UN">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-09 23:38:15 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<engineerTo>
+<item key="2D4DA0AC-C394-D39C-2E8F-0BEE4AB48A8E" value="true"/>
+</engineerTo>
+<newElementsIDs>0E52EC57-A35A-5B76-943A-562D3C885C2A</newElementsIDs>
+<usedAttributes>
+<attributeRef>0E52EC57-A35A-5B76-943A-562D3C885C2A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CD9CB3B2-4B9B-08CA-E7B3-C545128C8033" containerWithKeyObject="AF8DE111-4CB4-2F68-531B-34009F7AC180" localFKIndex="E6162E76-87A7-3DB9-3025-B2308B68575B" name="UCAST_MISE_VOJAK_FK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>82363381-4E59-AEC6-2205-BB39FED3BE36</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<referredTableLongName>VOJACI</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1F6600C7-F558-ABE4-86D7-26BBE51D43ED</referredTableID>
+<keyObject>6F9F8BDD-A9AF-8C95-FAE7-57280102ED11</keyObject>
+<referredKeyID>6F9F8BDD-A9AF-8C95-FAE7-57280102ED11</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_vojak</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

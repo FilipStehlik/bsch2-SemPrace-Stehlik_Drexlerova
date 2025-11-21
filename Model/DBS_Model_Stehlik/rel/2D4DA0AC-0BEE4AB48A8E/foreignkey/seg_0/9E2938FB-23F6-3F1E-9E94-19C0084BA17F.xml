@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9E2938FB-23F6-3F1E-9E94-19C0084BA17F" containerWithKeyObject="1F6600C7-F558-ABE4-86D7-26BBE51D43ED" localFKIndex="C47C037A-8F03-D714-FB5A-CEAD5609A7F5" name="VOJAK_UTVAR_FK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>3CD71B14-4066-08A5-AD15-4E648FEDD3A6</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<referredTableLongName>UTVARY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>279C5EF0-6AC7-9758-1182-BEDA1EBC398B</referredTableID>
+<keyObject>6538A80B-B805-73F7-0CFC-EECFD2735930</keyObject>
+<referredKeyID>6538A80B-B805-73F7-0CFC-EECFD2735930</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_utvar</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

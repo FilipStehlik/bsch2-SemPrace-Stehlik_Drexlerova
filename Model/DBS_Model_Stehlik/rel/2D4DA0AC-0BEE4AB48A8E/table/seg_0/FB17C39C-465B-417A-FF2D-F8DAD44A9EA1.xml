@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FB17C39C-465B-417A-FF2D-F8DAD44A9EA1" name="NASAZENI_TECHNIKY">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Spojovací tabulka mezi entitami TECHNIKA a MISE.
+Umožňuje evidovat, jaká technika byla nasazena v jednotlivých misích, včetně data nasazení a návratu.
+Každá technika může být přiřazena do více misí (M:N).
+IO16: Datum nasazení techniky musí spadat do časového rozsahu dané mise.
+IO17: Kombinace technika–mise je jedinečná (žádné duplicitní nasazení).]]></commentInRDBMS>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_mise" id="FFF5C09C-06D8-6C4D-C67E-CE7DB71FFF67">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1AA945AA-6A76-928E-E00D-27DB93717714" referredColumn="CE9AF429-509E-2120-C6BB-A6B6A40337E5"/>
+</associations>
+</Column>
+<Column name="id_technika" id="3A45A814-4C08-8A16-8CFA-C2284F9E042C">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="422A4FDA-4B86-2504-4315-E8ACAB503D3B" referredColumn="26A8D50D-3703-CCB8-ADD6-B3E6DB269DB6"/>
+</associations>
+</Column>
+<Column name="ucel" id="D7350656-60C0-0D9F-759A-F96DF3BD31EB">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>264083E3-A6A1-5EE9-F656-52D163163B79</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+<Column name="datum_nasazeni" id="A178D0EA-BE7B-0933-AF92-FD44367ACEC2">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>1504D979-301A-1C7D-70DB-5E3721BC5538</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+<Column name="datum_ukonceni" id="6931B5FB-E7EC-754B-3986-A453064FC1B9">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>2BA709A5-443B-51CB-BA9A-5281A55F8959</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B72E3A1-44F5-2E4E-0202-93A0A1246209" name="NASAZENI_TECHNIKY_PK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FFF5C09C-06D8-6C4D-C67E-CE7DB71FFF67"/>
+<colUsage columnID="3A45A814-4C08-8A16-8CFA-C2284F9E042C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6ED92B4E-5C1C-D6D8-5AE4-64DA24A0861C" name="NASAZENI_TECHNIKY__IDX">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 03:11:51 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FFF5C09C-06D8-6C4D-C67E-CE7DB71FFF67"/>
+<colUsage columnID="3A45A814-4C08-8A16-8CFA-C2284F9E042C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="88EFA3C5-355D-2645-3EC1-77D6ED6EBA7B" name="NASAZENI_TECHNIKY_MISE_FK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>1C584FAB-04EE-6EE4-F12D-F709EAB51842</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FFF5C09C-06D8-6C4D-C67E-CE7DB71FFF67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E5FC8D8B-864B-6906-1324-4C3A13B6B110" name="NASAZENI_TECHNIKY_TECHNIKA_FK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>1C584FAB-04EE-6EE4-F12D-F709EAB51842</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A45A814-4C08-8A16-8CFA-C2284F9E042C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

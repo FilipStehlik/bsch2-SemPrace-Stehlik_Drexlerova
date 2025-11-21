@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="00247CCC-D2A1-C54B-F768-575E08E3A6BD" name="DOVOLENKY">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Eviduje dovolené jednotlivých vojáků.
+
+SP14: Datum zahájení musí být dříve než datum ukončení (platí pro mise, školení, dovolené).
+SP16: Každý záznam dovolené odkazuje na přesně jednoho vojáka (1:N vazba VOJACI -> DOVOLENKY).
+
+PP4: Voják nesmí mít překrývající se dovolenky (kontrola časových intervalů při INSERT/UPDATE DOVOLENKY).]]></commentInRDBMS>
+<generatorID>0BAEACE8-9D5A-E99B-712E-EE9F30B224B9</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<ordsAlias>dovolenka</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_dovolenka" id="DBDE5197-11B2-D8DA-B446-A4A1978B9E59">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>5555EB38-2182-72C0-BFF6-325ABB1C5491</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum_zahajeni" id="5562E109-9234-A483-D5A0-27564A18EA13">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>4738CD66-3C1B-5E99-322F-7DD536E5FC8E</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum_ukonceni" id="97A0B5AC-B6CF-04EE-62B7-D9DC6674E768">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>350F074F-6591-75C1-4E17-651A5F494910</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="popis" id="66B0A23A-261B-2C2A-E934-B11FBF067C30">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>8896D834-5297-8EED-038C-F82BF3ABC4BF</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_vojak" id="247FC8CC-A829-285B-8946-0746858B696B">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>7AC80EC8-5AD3-9962-945B-80DB186FEFB7</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1D065EF8-0D09-2899-7C27-102D162E92D2" referredColumn="3F5FF551-DD44-00DD-BB6D-618D5D09F9CC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9D40B643-1B72-C0BF-7654-7074078C01A2" name="DOVOLENKA_PK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>849E074C-23BA-F243-AF73-F5BBBFEC5C48</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBDE5197-11B2-D8DA-B446-A4A1978B9E59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D323ABDC-E24D-CE87-B62C-681B07D8FE2B" name="DOVOLENKA_vojak_IDX">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:53:23 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="247FC8CC-A829-285B-8946-0746858B696B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="745A1DDB-0065-65A7-6C6C-8868CC301A46" name="DOVOLENKA_VOJAK_FK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>F33AFF63-F04F-456A-9354-50E1F03E1686</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="247FC8CC-A829-285B-8946-0746858B696B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

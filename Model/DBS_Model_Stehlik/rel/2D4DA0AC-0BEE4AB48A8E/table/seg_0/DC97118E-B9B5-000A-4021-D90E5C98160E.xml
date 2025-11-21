@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DC97118E-B9B5-000A-4021-D90E5C98160E" name="PRIDELENI_ZBRANI">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Historie přidělení zbraní jednotlivým vojákům.
+
+SP19: Existuje vztah M:N mezi vojáky a zbraněmi evidující historii přidělení (přes PRIDELENI_ZBRANI).
+
+PP5: Voják nemůže mít současně přidělené dvě stejné zbraně (kontrola unikátnosti aktivních přidělení v PRIDELENI_ZBRANI kde datum_vraceni IS NULL).]]></commentInRDBMS>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<ordsAlias>prideleni_zbrane</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_vojak" id="FC43DC51-111C-B5A0-004C-7F0C3AE73779">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="59BF698A-1D2A-B5A7-2720-536EF678C51A" referredColumn="3F5FF551-DD44-00DD-BB6D-618D5D09F9CC"/>
+</associations>
+</Column>
+<Column name="id_zbran" id="6DF6022D-54B2-B057-0D1A-13E50F999A2E">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="25ECA6A4-FE32-909E-ECB3-DA5A74285F02" referredColumn="76DC8A69-DE0D-4383-BDB7-FE4B48355D8D"/>
+</associations>
+</Column>
+<Column name="datum_prideleni" id="AFF59403-B79C-33F9-30C2-7FF88D5E0314">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>FE1DDA05-22C9-FDA3-BC6D-7DF7EEE76739</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="datum_vraceni" id="7DB20124-CF13-9E29-C180-5E19391AF127">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>EA0E0331-EE9D-4D95-867D-854B56ED36DC</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+<Column name="poznamka" id="DE33478C-FCC5-00BF-9CE8-C567556A4D03">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>03BDA36D-6064-4334-AEAC-8C358E5397AC</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D812C954-EC37-48F2-9735-C1120CF514D4" name="PRIDELENI_ZBRANE_PK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC43DC51-111C-B5A0-004C-7F0C3AE73779"/>
+<colUsage columnID="6DF6022D-54B2-B057-0D1A-13E50F999A2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0502EA44-412F-6002-4749-CC30E722917E" name="PRIDELENI_ZBRANE__IDX">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 03:11:05 UTC</createdTime>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC43DC51-111C-B5A0-004C-7F0C3AE73779"/>
+<colUsage columnID="6DF6022D-54B2-B057-0D1A-13E50F999A2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A430248E-B610-C7BB-A3B0-EAB1979CB400" name="PRIDELENI_ZBRANE_VOJAK_FK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>1F597449-0597-BC6B-EEFB-47CA8D5B6AD1</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC43DC51-111C-B5A0-004C-7F0C3AE73779"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C181673-B405-EBA5-C5B1-DD98F1B02C9D" name="PRIDELENI_ZBRANE_ZBRAN_FK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>1F597449-0597-BC6B-EEFB-47CA8D5B6AD1</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DF6022D-54B2-B057-0D1A-13E50F999A2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

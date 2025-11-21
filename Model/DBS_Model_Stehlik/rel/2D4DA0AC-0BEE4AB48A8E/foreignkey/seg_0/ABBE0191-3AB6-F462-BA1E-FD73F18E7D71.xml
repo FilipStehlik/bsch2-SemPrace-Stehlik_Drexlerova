@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ABBE0191-3AB6-F462-BA1E-FD73F18E7D71" containerWithKeyObject="1F6600C7-F558-ABE4-86D7-26BBE51D43ED" localFKIndex="D15FAADD-369F-56E8-9502-F47299A324C0" name="VOJAK_STAV_POHOTOVOSTI_FK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>CD46B6F6-FF40-92F8-DE2D-77D6C910EA51</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<referredTableLongName>STAVY_POHOTOVOSTI</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9B8768EF-07A3-BF29-EF14-FDB79B8E5BB0</referredTableID>
+<keyObject>B18945A7-FF25-F3FE-479B-B2D81C2B505B</keyObject>
+<referredKeyID>B18945A7-FF25-F3FE-479B-B2D81C2B505B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_stav_pohotovosti</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

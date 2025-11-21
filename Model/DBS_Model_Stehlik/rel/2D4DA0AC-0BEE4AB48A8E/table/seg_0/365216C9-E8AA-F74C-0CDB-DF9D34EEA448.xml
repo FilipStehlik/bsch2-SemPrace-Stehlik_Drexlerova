@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="365216C9-E8AA-F74C-0CDB-DF9D34EEA448" name="LETOUNY">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Specializace tabulky TECHNIKA – eviduje parametry pro letouny.
+
+SP10: Každý letoun odpovídá jednomu záznamu v tabulce TECHNIKA s typem 'L' (ARC constraint).]]></commentInRDBMS>
+<generatorID>AFBB60B2-531A-05E4-8B8E-A2DFB73DB317</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<ordsAlias>letoun</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_technika" id="3773D43A-F4A4-1C6B-2D00-9DE6B2CB9E6B">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>8170553E-3DA6-127C-F4E9-A827B938CBD8</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FC361C24-A72F-4A07-9D09-8FB442304734" referredColumn="26A8D50D-3703-CCB8-ADD6-B3E6DB269DB6"/>
+</associations>
+</Column>
+<Column name="max_vyska" id="A2E282B0-2D16-3B14-2437-038E29542C77">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>4A14B6D6-5007-7BD6-02AF-E3F76CAB572D</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<constraintName>letoun_max_vyska_check</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 21c" definition="max_vyska &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="max_nosnost" id="042B3B47-2BA9-56A7-7A78-E357F3B35272">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>1E8A1F6B-4C84-AFAA-DB86-E1666DD60C8B</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<constraintName>letoun_max_nosnost_check</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="max_nosnost &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="celkove_hodiny" id="3027DEF6-C9AE-92A1-8356-1E016981EDC4">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>1D15C46F-104E-B543-5E69-A9EE12D64DD9</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="18D02F78-2B5A-29A2-37B7-DA0D604DE9F5" name="LETOUN_PK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>2204F136-66B9-8DDE-7C37-3A4B4557EF45</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3773D43A-F4A4-1C6B-2D00-9DE6B2CB9E6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="15EE23FA-EDE8-8D8D-E578-5A37E9DBBE52" name="LETOUN_TECHNIKA_FK">
+<createdBy>Filda</createdBy>
+<createdTime>2025-11-10 02:36:06 UTC</createdTime>
+<generatorID>D7E241B7-A40B-270D-0B60-2E3AB6C64E37</generatorID>
+<ownerDesignName>DBS_Model_Stehlik</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3773D43A-F4A4-1C6B-2D00-9DE6B2CB9E6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
